@@ -2,8 +2,7 @@ interface Props { subpage: string; }
 
 export default function TradingActivityPage({ subpage }: Props) {
   return (
-    <div className="bg-neutral-900 rounded-2xl shadow-lg p-8 min-h-[300px] flex flex-col items-center">
-      <h2 className="text-3xl font-bold mb-6 text-orange-300">Trading Activity - {subpage}</h2>
+    <div className="w-full h-full flex flex-col">
       {subpage === 'History' && (
         <div className="w-full h-48 flex items-center justify-center">
           <table className="w-2/3 text-left bg-neutral-800 rounded-lg overflow-hidden">
